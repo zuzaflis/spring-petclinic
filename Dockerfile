@@ -1,6 +1,6 @@
 FROM openjdk:latest
 
-COPY --from=app-bld /spring-petclinic/target/*.jar /app/app.jar
+COPY --from=zuza2828/app-bld /spring-petclinic/target/*.jar /app/app.jar
 
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 
